@@ -6,8 +6,8 @@ import './index.css'
 export default function Lateral ({weatherData}) {
     return(
         <>
-            <div className="relative flex flex-col items-center justify-center mt-5 space-y-10 md:space-y-20">
-              <div className="flex flex-col lg:flex-row justify-between w-full font-medium text-white capitalize">
+            <div className="relative flex flex-col items-center justify-center mt-5 space-y-10">
+              <div className="flex flex-col justify-between w-full font-medium text-white capitalize">
                 <div className="flex flex-row items-center justify-center gap-1">
                 <FaMapMarkerAlt/>
                 <p className='text-center 2xl:text-2xl'>{weatherData.name}, {weatherData.sys.country}</p>

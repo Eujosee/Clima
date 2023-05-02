@@ -107,7 +107,7 @@ export default function Conteudo() {
   },[])
 
   return (
-    <div className="flex flex-col md:flex-row min-w-screen min-h-screen lg:max-h-screen bg-[#4DA9EC]">
+    <div className="flex flex-col md:flex-row min-w-screen min-h-screen  bg-[#4DA9EC]">
       <ToastContainer />
       <div className="h-full md:min-h-screen md:w-1/2 lg:w-1/3 bg-[#4DA9EC] p-6 lg:overflow-hidden">
         <div className="flex items-center relative">
@@ -126,7 +126,7 @@ export default function Conteudo() {
         </div>
         {!loading && <Lateral weatherData={weatherData} />}
       </div>
-      <div className="flex flex-col w-full md:max-h-full relative right-4 left-0 space-y-6 px-8 py-4  justify-between md:space-y-0 bg-[#A4DEFF] rounded-t-[2.5rem] md:rounded-s-[2.5rem] md:rounded-tr-none">
+      <div className="flex flex-col w-full md:min-h-fit relative right-4 left-0 space-y-6 px-8 py-4  justify-between md:space-y-0 bg-[#A4DEFF] rounded-t-[2.5rem] md:rounded-s-[2.5rem] md:rounded-tr-none">
         {!loading && (
           <>
             <PrevSemana data={weekData} />
