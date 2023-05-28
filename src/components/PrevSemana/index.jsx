@@ -5,11 +5,10 @@ import PrevSlider from "../PrevSlider";
 moment.locale("pt-br");
 
 export default function PrevSemana({data}) {
-
   return (
     <div className="w-full p-6 flex flex-col">
-      <h1 className="text-xl 2xl:text-4xl font-semibold mb-3 text-center md:text-start">Próximos 5 dias</h1>
-      <div className="hidden md:flex md:flex-row md:flex-1 md:justify-evenly lg:justify-between gap-x-4 flex-wrap gap-4">
+      <h1 className="text-xl 2xl:text-3xl font-semibold mb-3 text-center lg:text-start">Próximos 5 dias</h1>
+      <div className="hidden lg:flex lg:flex-row lg:flex-wrap gap-x-4 flex-wrap gap-4">
         {data.map((item, index) => {
                     return(
                         <div key={index} className="flex flex-col items-center justify-center 2xl:justify-evenly gap-y-2 bg-white p-4 rounded-2xl shadow-lg w-40 2xl:w-[10vw]  2xl:h-[25vh]
@@ -27,7 +26,7 @@ export default function PrevSemana({data}) {
                     )
         })}
       </div>
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <PrevSlider data={data}/>
       </div>
     </div>

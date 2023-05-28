@@ -4,8 +4,8 @@ import DadosSlider from "../DadosSlider"
 export default function Dados({ data }) {
   return (
     <div className="w-full h-fit p-6 pt-0 flex flex-col">
-      <h3 className="text-xl 2xl:text-4xl font-semibold mb-3 text-center md:text-start">Dados de hoje</h3>
-      <div className="hidden md:flex md:flex-col md:justify-end gap-y-6">
+      <h3 className="text-xl 2xl:text-3xl font-semibold mb-3 text-center lg:text-start">Dados de hoje</h3>
+      <div className="hidden lg:flex lg:flex-col lg:justify-end gap-y-6">
         <div className="grid grid-cols-2 lg:grid-cols-6 w-full gap-4">
           <div className="flex flex-col lg:col-span-2 justify-center 2xl:justify-evenly items-center bg-white p-4 rounded-2xl shadow-lg 2xl:h-[25vh]
           ">
@@ -94,7 +94,7 @@ export default function Dados({ data }) {
           </div>
         </div>
       </div>
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
           <DadosSlider data={data}/>
       </div>
     </div>
